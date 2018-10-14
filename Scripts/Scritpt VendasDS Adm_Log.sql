@@ -1,0 +1,10 @@
+USE VendasDS;
+GO
+CREATE TABLE dbo.Adm_Log
+(Id_Log       UNIQUEIDENTIFIER
+ PRIMARY KEY NOT NULL, 
+ Data         DATETIME NOT NULL, 
+ Passo        VARCHAR(50) NOT NULL, 
+ SucessoFalha CHAR(1) NOT NULL, 
+ mensagem     VARCHAR(255) NOT NULL
+)
